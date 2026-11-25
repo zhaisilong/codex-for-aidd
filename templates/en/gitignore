@@ -1,0 +1,42 @@
+# Rename to .gitignore when using
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Keys and local config
+.env
+.env.*
+*.pem
+*.key
+
+# Data and results (adjust as needed; use LFS / DVC / external storage for large files)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+results/*
+!results/.gitkeep
+
+# Common large files
+*.h5
+*.hdf5
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.bam
+*.cram
+*.fastq
+*.fastq.gz
+*.sdf.gz
+
+# System files
+.DS_Store

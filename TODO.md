@@ -4,7 +4,8 @@
 
 ## 进行中
 
-- [ ] 英文版:`README.en.md`、`docs/en/`、`templates/en/`,与中文一一对应
+- [x] ~~英文版:`README.en.md`、`docs/en/`、`templates/en/`,与中文一一对应~~(2026-11-25 完成首版)
+- [ ] 英文版请母语者润色
 
 ## 等待触发(不主动做)
 

@@ -12,6 +12,7 @@
 - 模板 `templates/`:`AGENTS.md`、项目目录、`gitignore`、`CHANGELOG.md`、`VALIDATION.md`、`make_handoff.sh`
 - README 开头"Agent 不能替代你思考"、联系方式、Star History
 - `TODO.md`:后续计划与待核实项
+- 英文版:`README.en.md`、`docs/en/` 00–09、`templates/en/`,与中文章节一一对应;`CONTRIBUTING.md` 改为中英双语
 
 ### 变更
 
