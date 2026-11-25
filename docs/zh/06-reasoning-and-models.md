@@ -45,10 +45,11 @@ Max 和 Ultra 在某些版本里需要先在设置中开启。默认值可在 `c
 | 后续开发、重构 | Sol | Extra high |
 | 部署、GitHub 更新等杂活 | Terra | Medium / High |
 
-具体怎么拆 session,见 [08](08-sessions-and-handoff.md)。
+注意:**一个 session 内不跨模型切换**(会影响操作和性能),换模型就换 session。怎么拆 session,见 [08](08-sessions-and-handoff.md)。
 
 ## 模型怎么选
 
 - 主力 **Sol / Terra**;**Astra 太贵**,Sol 反复失败、问题极难、出错代价极高时才用
+- Sol 就 Sol,Terra 就 Terra,别在同一个 session 里来回换
 - 一般直接用最新模型,价格差不多
 - 价目表见 [07](07-pricing.md)

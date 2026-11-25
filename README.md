@@ -70,14 +70,14 @@
 2. 原始数据只读,结果可再生;每个项目有 `AGENTS.md` 和 `CHANGELOG.md`。
 3. 环境用 mamba/conda,Python 依赖用 uv。
 4. 一个任务一个分支,小步提交,自己看 diff。
-5. 一个功能模块一个 session,用 `hand_off` 交接。
+5. 初始化在一个 session 里完成,之后 fork 或新开;一个功能模块一个 session,用 `hand_off` 交接;session 内不换模型。
 6. Pro $100 以上 Extra high 开到底;Ultra 开局,Max 深想;主力 Sol/Terra,少用 Astra。
 7. 敏感数据先问规定,结果自己核对,验证清单让 agent 维护。
 
 ## 联系
 
 关于 AIDD、计算机科学,或未来与科技相关的问题,欢迎发邮件到 **zhaisilong@outlook.com**,或直接在 GitHub 提交 Issue。
-也欢迎 PR 补充经验、纠错、翻译,详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+也欢迎 PR 补充经验、纠错、翻译,详见 [CONTRIBUTING.md](CONTRIBUTING.md);后续计划见 [TODO.md](TODO.md)。
 
 ## 许可证
 

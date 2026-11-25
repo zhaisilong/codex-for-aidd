@@ -11,6 +11,7 @@
   快速开始、先想清楚、项目目录、代码与环境、Git 与 GitHub、安全与结果核对、思考深度与模型选择、价格与套餐、会话与交接、项目的生长与审美
 - 模板 `templates/`:`AGENTS.md`、项目目录、`gitignore`、`CHANGELOG.md`、`VALIDATION.md`、`make_handoff.sh`
 - README 开头"Agent 不能替代你思考"、联系方式、Star History
+- `TODO.md`:后续计划与待核实项
 
 ### 变更
 
@@ -18,6 +19,7 @@
 - 章节按阅读逻辑重排,README 目录分组
 - 价格按 2026-11-25 的官方价目表更新(GPT-6.2 Astra / Sol 等);Pro $100/$200 充值建议;不推荐 Fast,改为多 session 并行
 - 环境:mamba/conda 管整体环境,uv 管 Python 依赖;`ccusage` 用量统计
-- 工作方式:plan 模式先对齐;一个功能模块一个 session;`hand_off` 交接包;梯度调用(Ultra、Extra high、Terra)
+- 工作方式:plan 模式先对齐;初始化在一个 session 内完成,之后 `/fork` 或新开;一个功能模块一个 session;`hand_off` 交接包
+- 模型:一个 session 内不跨模型切换(Sol 就 Sol,Terra 就 Terra),梯度调用改为跨 session
 - 验证清单由 agent 维护;每个项目维护 `CHANGELOG.md`
 - 自己造轮子,不推荐 GPT-Rosalind 与 Life Sciences 插件
