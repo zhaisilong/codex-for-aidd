@@ -79,10 +79,6 @@ No one can build that taste for you. It is the starting point of this handbook.
 Questions about AIDD, computer science, or the future of technology are welcome at **zhaisilong@outlook.com**, or open an issue on GitHub.
 PRs are welcome too, whether to add experience, fix errors or translate; see [CONTRIBUTING.md](CONTRIBUTING.md). Plans are in [TODO.md](TODO.md).
 
-## License
-
-[MIT](LICENSE)
-
 ## Star History
 
 <picture>
@@ -103,3 +99,7 @@ PRs are welcome too, whether to add experience, fix errors or translate; see [CO
     src="https://api.star-history.com/svg?repos=zhaisilong/codex-for-aidd&type=Date"
   />
 </picture>
+
+## License
+
+[MIT](LICENSE)

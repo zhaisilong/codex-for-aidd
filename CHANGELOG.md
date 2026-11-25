@@ -16,7 +16,7 @@
 
 ### 变更
 
-- 许可证统一为 MIT
+- 许可证统一为 MIT,许可证章节移到 README 末尾(Star History 之后)
 - 章节按阅读逻辑重排,README 目录分组
 - 价格按 2026-11-25 的官方价目表更新(GPT-6.2 Astra / Sol 等);Pro $100/$200 充值建议;不推荐 Fast,改为多 session 并行
 - 环境:mamba/conda 管整体环境,uv 管 Python 依赖;`ccusage` 用量统计

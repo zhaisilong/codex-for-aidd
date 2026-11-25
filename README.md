@@ -79,10 +79,6 @@
 关于 AIDD、计算机科学,或未来与科技相关的问题,欢迎发邮件到 **zhaisilong@outlook.com**,或直接在 GitHub 提交 Issue。
 也欢迎 PR 补充经验、纠错、翻译,详见 [CONTRIBUTING.md](CONTRIBUTING.md);后续计划见 [TODO.md](TODO.md)。
 
-## 许可证
-
-[MIT](LICENSE)
-
 ## Star History
 
 <picture>
@@ -103,3 +99,7 @@
     src="https://api.star-history.com/svg?repos=zhaisilong/codex-for-aidd&type=Date"
   />
 </picture>
+
+## 许可证
+
+[MIT](LICENSE)
