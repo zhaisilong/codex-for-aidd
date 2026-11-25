@@ -1,4 +1,4 @@
-# 04 模型选择与价格
+# 07 价格与套餐
 
 > **最后核对日期:2026-11-25**。以官方为准:[Codex 套餐](https://chatgpt.com/codex/pricing/) · [API 价格](https://developers.openai.com/api/docs/pricing) · [费率表](https://help.openai.com/en/articles/20001415-chatgpt-rate-card-enterprise-token-based-pricing)
 

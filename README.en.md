@@ -4,24 +4,48 @@
 
 English | [中文](README.md) · [Changelog](CHANGELOG.md)
 
-> The English version is planned after the Chinese edition stabilizes. Chapter and file names will mirror `docs/zh/`, so translations can be matched one to one.
+> The English edition is planned after the Chinese edition stabilizes. Chapter numbers and file names mirror `docs/zh/`, so translations can be matched one to one.
 
 ## Planned structure
 
 | Chapter | Topic |
 |---|---|
-| 00 Getting started | Install, sign in, let Codex read your repo |
-| 01 Project structure | Directories, read-only raw data, writing `AGENTS.md` |
-| 02 Reusable code | From one-off scripts to small tested modules |
-| 03 Git and GitHub | Small commits, branches, PRs, what stays out of the repo |
-| 04 Models and pricing | Choosing a tier, saving cost, where to check current prices |
-| 05 Safety and verification | Sensitive data, permissions, validation checklist |
-| 06 Reasoning effort and models | When to use Extra high, Max and Ultra |
-| 07 From idea to execution | Discuss first, align in plan mode, then build |
+| 00 Getting started | Install, update, usage tracking, first run |
+| 01 Think first | Discuss, write it down, align in plan mode |
+| 02 Project structure | Directories, read-only raw data, `AGENTS.md` |
+| 03 Code and environment | Reusable code, tests, mamba and uv |
+| 04 Git and GitHub | Commits, branches, CHANGELOG |
+| 05 Verification and safety | Sensitive data, permissions, validation checklist |
+| 06 Reasoning effort and models | Extra high, Max, Ultra; gradient use |
+| 07 Pricing and plans | Price table, which plan, saving cost |
 | 08 Sessions and hand-off | One session per feature block; hand_off packages |
 | 09 Growth and taste | Good projects grow; simplicity is beauty |
 
+## Contact
+
+Questions about AIDD, computer science, or the future of technology: **zhaisilong@outlook.com**, or open a GitHub issue.
+
 ## License
 
-- Documentation: [CC BY 4.0](LICENSE-docs.md)
-- Code and templates: [MIT](LICENSE)
+[MIT](LICENSE)
+
+## Star History
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="
+      https://api.star-history.com/svg?repos=zhaisilong/codex-for-aidd&type=Date&theme=dark
+    "
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="
+      https://api.star-history.com/svg?repos=zhaisilong/codex-for-aidd&type=Date
+    "
+  />
+  <img
+    alt="Star History Chart"
+    src="https://api.star-history.com/svg?repos=zhaisilong/codex-for-aidd&type=Date"
+  />
+</picture>

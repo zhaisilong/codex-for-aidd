@@ -6,7 +6,7 @@
 npm install -g @openai/codex
 ```
 
-在项目目录运行 `codex`,按提示登录(ChatGPT 账号或 API Key,区别见 [04](04-models-and-pricing.md))。
+在项目目录运行 `codex`,按提示登录(ChatGPT 账号或 API Key,区别见 [07](07-pricing.md))。
 官方文档:https://github.com/openai/codex
 
 **隔几天更新一次**,新交互和新模型都随版本出现:
@@ -37,6 +37,6 @@ npx -y ccusage@latest codex monthly
 再挑一个小任务,例如"给 `scripts/clean_ligands.py` 补 docstring 和类型标注",要求它先说明要改哪些文件、改完跑测试、不碰 `data/`。
 然后用 `git diff` 自己看一遍。
 
-下一步:[01 项目目录与脚本](01-project-structure.md)。
+下一步:[01 先想清楚,再动手](01-think-first.md)。
 
 > 最后核对日期:2026-11-25

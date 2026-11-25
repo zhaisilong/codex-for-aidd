@@ -26,26 +26,38 @@
 好的项目、skill、代码和文档,都是随着理解**一点点长出来**的。项目内的理解决定它对不对,跨项目的风格决定它美不美,而美往往来自简洁。
 这份审美没人能替你建立,这是整本手册的出发点。
 
-> 这不是严格的规范,而是一份随和的经验手册,能少踩几个坑就够了。
-
-## 范围
-
-以 **Codex** 为核心。其他智能体(Claude Code、Gemini CLI 等)只在此提及,大部分习惯可以迁移。
-价格和模型变化很快,涉及的章节都标注了核对日期。
+> 这不是严格的规范,而是一份随和的经验手册,能少踩几个坑就够了。以 Codex 为核心,其他智能体的习惯大多可以迁移。
 
 ## 目录
 
-| 章节 | 内容 |
+**起步**
+
+| | |
 |---|---|
 | [00 快速开始](docs/zh/00-getting-started.md) | 安装、更新、用量统计、第一次使用 |
-| [01 项目目录与脚本](docs/zh/01-project-structure.md) | 目录、原始数据保护、`AGENTS.md` |
-| [02 代码与环境](docs/zh/02-reusable-code.md) | 复用、测试、mamba 与 uv |
-| [03 Git 与 GitHub](docs/zh/03-git-github.md) | 提交、分支、CHANGELOG |
-| [04 模型选择与价格](docs/zh/04-models-and-pricing.md) | 价目表、套餐、省钱 |
-| [05 安全与结果核对](docs/zh/05-safety.md) | 数据安全、权限、验证清单 |
-| [06 思考深度与模型选择](docs/zh/06-reasoning-and-models.md) | Extra high、Max、Ultra |
-| [07 从想法到执行](docs/zh/07-from-idea-to-agent.md) | 先讨论,plan 对齐,再动手 |
+| [01 先想清楚,再动手](docs/zh/01-think-first.md) | 先讨论、写文档、plan 对齐 |
+
+**工程基础**
+
+| | |
+|---|---|
+| [02 项目目录与脚本](docs/zh/02-project-structure.md) | 目录、原始数据保护、`AGENTS.md` |
+| [03 代码与环境](docs/zh/03-code-and-env.md) | 复用、测试、mamba 与 uv |
+| [04 Git 与 GitHub](docs/zh/04-git-github.md) | 提交、分支、CHANGELOG |
+| [05 安全与结果核对](docs/zh/05-verify-and-safety.md) | 数据安全、权限、验证清单 |
+
+**与智能体协作**
+
+| | |
+|---|---|
+| [06 思考深度与模型选择](docs/zh/06-reasoning-and-models.md) | Extra high、Max、Ultra,梯度调用 |
+| [07 价格与套餐](docs/zh/07-pricing.md) | 价目表、充值建议、省钱 |
 | [08 会话与交接](docs/zh/08-sessions-and-handoff.md) | 一个功能一个 session,hand_off |
+
+**理念**
+
+| | |
+|---|---|
 | [09 项目的生长与审美](docs/zh/09-growth-and-taste.md) | 长出来的项目,简洁与造轮子 |
 
 ## 模板
@@ -54,8 +66,8 @@
 
 ## 一页纸
 
-1. 想清楚再动手:先聊透想法,复杂任务先开 plan 对齐。
-2. 原始数据只读,结果可再生,每个项目有 `AGENTS.md` 和 `CHANGELOG.md`。
+1. 想清楚再动手:先聊透想法,不显而易见的任务先开 plan 对齐。
+2. 原始数据只读,结果可再生;每个项目有 `AGENTS.md` 和 `CHANGELOG.md`。
 3. 环境用 mamba/conda,Python 依赖用 uv。
 4. 一个任务一个分支,小步提交,自己看 diff。
 5. 一个功能模块一个 session,用 `hand_off` 交接。
@@ -69,4 +81,25 @@
 
 ## 许可证
 
-文档 [CC BY 4.0](LICENSE-docs.md) · 代码与模板 [MIT](LICENSE)
+[MIT](LICENSE)
+
+## Star History
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="
+      https://api.star-history.com/svg?repos=zhaisilong/codex-for-aidd&type=Date&theme=dark
+    "
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="
+      https://api.star-history.com/svg?repos=zhaisilong/codex-for-aidd&type=Date
+    "
+  />
+  <img
+    alt="Star History Chart"
+    src="https://api.star-history.com/svg?repos=zhaisilong/codex-for-aidd&type=Date"
+  />
+</picture>
