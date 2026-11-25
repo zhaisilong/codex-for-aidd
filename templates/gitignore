@@ -1,0 +1,42 @@
+# 使用时请重命名为 .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 密钥与本地配置
+.env
+.env.*
+*.pem
+*.key
+
+# 数据与结果(按需调整;大文件建议用 LFS / DVC / 外部存储)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+results/*
+!results/.gitkeep
+
+# 常见大文件
+*.h5
+*.hdf5
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.bam
+*.cram
+*.fastq
+*.fastq.gz
+*.sdf.gz
+
+# 系统文件
+.DS_Store
