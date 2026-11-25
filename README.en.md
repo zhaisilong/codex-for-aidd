@@ -15,10 +15,11 @@ English | [中文](README.md) · [Changelog](CHANGELOG.md)
 | 02 Reusable code | From one-off scripts to small tested modules |
 | 03 Git and GitHub | Small commits, branches, PRs, what stays out of the repo |
 | 04 Models and pricing | Choosing a tier, saving cost, where to check current prices |
-| 05 Safety and compliance | Sensitive data, permissions, verifying results |
+| 05 Safety and verification | Sensitive data, permissions, validation checklist |
 | 06 Reasoning effort and models | When to use Extra high, Max and Ultra |
-| 07 From idea to execution | Discuss first, then hand over to the agent |
-| 08 Growth and taste | Good projects grow; simplicity is beauty |
+| 07 From idea to execution | Discuss first, align in plan mode, then build |
+| 08 Sessions and hand-off | One session per feature block; hand_off packages |
+| 09 Growth and taste | Good projects grow; simplicity is beauty |
 
 ## License
 

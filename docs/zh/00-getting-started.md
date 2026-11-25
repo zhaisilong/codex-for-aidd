@@ -1,59 +1,42 @@
 # 00 快速开始
 
-目标:十分钟内,让 Codex 读懂你的一个项目,并做一件小事。
-
-## 1. 安装
-
-最简单的方式是用 npm 全局安装:
+## 安装与更新
 
 ```bash
 npm install -g @openai/codex
 ```
 
-安装后在项目目录里运行 `codex`,按提示登录即可(可以用 ChatGPT 账号登录,也可以用 API Key)。
-两种方式的区别见 [04 模型选择与价格](04-models-and-pricing.md)。
+在项目目录运行 `codex`,按提示登录(ChatGPT 账号或 API Key,区别见 [04](04-models-and-pricing.md))。
+官方文档:https://github.com/openai/codex
 
-> 官方仓库与文档:https://github.com/openai/codex
-> 其他安装方式(如 Homebrew、桌面应用、IDE 插件)以官方文档为准。
-
-## 2. 每隔几天更新一次
-
-建议**隔几天就更新一次**:
+**隔几天更新一次**,新交互和新模型都随版本出现:
 
 ```bash
 npm install -g @openai/codex@latest
 ```
 
-原因很实际:新的交互、新的模型经常随版本一起出现。
-想用上最新的模型和功能,就保持更新。
+## 推荐工具:用量统计
 
-> 最后核对日期:2026-11-25
+用 [ccusage](https://github.com/ryoppippi/ccusage) 查看 Codex 的 token 与费用,不用安装:
 
-## 3. 第一次使用:只读探索
+```bash
+npx -y ccusage@latest codex monthly
+```
 
-在一个**已经用 Git 管理**的项目目录里启动 Codex,第一句话不要让它改东西,先让它读:
+可以把 `monthly` 换成 `daily`、`weekly`、`session`。每月看一眼,知道额度花在哪,比任何省钱技巧都有效。
+
+## 第一次使用
+
+在一个**已用 Git 管理**的项目里启动,先让它读,不要改:
 
 ```text
-请阅读这个仓库,告诉我:
-1. 项目是做什么的
-2. 主要目录和入口脚本
-3. 怎么运行测试
+请阅读这个仓库,告诉我项目做什么、主要目录和入口、怎么运行测试。
 先不要修改任何文件。
 ```
 
-这样做有两个好处:你能马上看出它有没有理解对,也能发现项目里哪些约定还没写清楚。
+再挑一个小任务,例如"给 `scripts/clean_ligands.py` 补 docstring 和类型标注",要求它先说明要改哪些文件、改完跑测试、不碰 `data/`。
+然后用 `git diff` 自己看一遍。
 
-## 4. 第一次改动:小而可验证
+下一步:[01 项目目录与脚本](01-project-structure.md)。
 
-挑一个小任务,例如"给 `scripts/clean_ligands.py` 补上 docstring 和类型标注",并且要求:
-
-- 先说明打算改哪些文件
-- 改完运行现有测试
-- 不要改动 `data/` 下的任何内容
-
-然后用 `git diff` 自己看一遍。习惯从第一天养成。
-
-## 5. 下一步
-
-按顺序读 [01 项目目录与脚本](01-project-structure.md),把 `AGENTS.md` 配起来,之后的体验会好很多。
-选择模型和思考深度,见 [06 思考深度与模型选择](06-reasoning-and-models.md)。
+> 最后核对日期:2026-11-25

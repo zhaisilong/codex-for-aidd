@@ -6,71 +6,67 @@
 
 ---
 
-模型会迭代,工具每个月都在变,今天的最强明天就成了平均线。真正留下来的,是你对一个项目的理解,以及你处理它的方式,也就是**工程习惯与风格**。
-智能体会把这一点放大:目录清晰、约定明确的项目,它如虎添翼;混乱的项目,它只会更快地制造混乱。所以与其追逐每一个新功能,不如先把基本功做扎实。
+## Agent 不能替代你思考
 
-我们相信,好的项目、好的 skill、好的代码、好的文档,都不是设计出来的,而是**随着你对项目的理解一点点长出来的**。
-项目内的理解决定它对不对,跨项目的风格决定它美不美。而美,往往来自简洁:用精简的实现完成功能,知道在哪个关键点该用并行、缓存、接口与解耦,也知道什么时候可以直接跳过。
-这份审美没有人能替你建立,智能体只会放大你已有的东西。这是整本手册的出发点。
+> "Would you tell me, please, which way I ought to go from here?"
+> "That depends a good deal on where you want to get to."
+> "I don't much care where—"
+> "Then it doesn't matter which way you go."
+> ——Lewis Carroll,《爱丽丝梦游仙境》
+
+不知道去哪,往哪走都无所谓。Codex 有很多"短见":它受限于超长期上下文和对项目的先验知识。
+所以你必须非常了解自己的项目,并且**认真对待每一次和 agent 的对话**:那是你认知进步的机会。
+随便让它做,换来的往往是一坨💩。
 
 ---
 
-> 这不是一份严格的规范,而是一份随和的经验手册。能帮你少踩几个坑就够了。
+模型会迭代,工具每月都在变,留下来的是你对项目的理解和处理它的方式,也就是**工程习惯与风格**。
+智能体会放大这一点:结构清晰的项目让它如虎添翼,混乱的项目只会被它更快地搞乱。
 
-## 这是什么
+好的项目、skill、代码和文档,都是随着理解**一点点长出来**的。项目内的理解决定它对不对,跨项目的风格决定它美不美,而美往往来自简洁。
+这份审美没人能替你建立,这是整本手册的出发点。
 
-做 AIDD 和生信的人,通常懂数据、懂生物学、也会写代码,但很少系统地学过"怎么和智能体一起干活"。
-结果常常是:智能体改了一堆文件却不知道改了什么,脚本散落各处,三个月后自己也复现不了。
-
-这份手册想回答一个问题:**怎样让 Codex 成为一个可靠、可复现、可审计的研究搭档**。
-
-重点放在工程习惯上(目录、脚本、版本控制、成本、安全、思考深度),而不是提示词技巧。
+> 这不是严格的规范,而是一份随和的经验手册,能少踩几个坑就够了。
 
 ## 范围
 
-- 以 **Codex** 为核心讲解。
-- 其他智能体(如 Claude Code、Gemini CLI 等)只在文末提及,大部分习惯是通用的,可自行迁移。
-- 价格和模型变化很快,价格章节标注了核对日期,请以官方页面为准。
+以 **Codex** 为核心。其他智能体(Claude Code、Gemini CLI 等)只在此提及,大部分习惯可以迁移。
+价格和模型变化很快,涉及的章节都标注了核对日期。
 
 ## 目录
 
 | 章节 | 内容 |
 |---|---|
-| [00 快速开始](docs/zh/00-getting-started.md) | 安装、更新、第一次让 Codex 读懂你的仓库 |
-| [01 项目目录与脚本](docs/zh/01-project-structure.md) | 目录怎么摆、原始数据怎么保护、`AGENTS.md` 怎么写 |
-| [02 代码细节与复用](docs/zh/02-reusable-code.md) | 把一次性脚本变成可复用模块,配上小测试 |
-| [03 Git 与 GitHub](docs/zh/03-git-github.md) | 小步提交、分支、PR、什么不该进仓库 |
-| [04 模型选择与价格](docs/zh/04-models-and-pricing.md) | 当前模型与价格、订阅档位、怎么省钱 |
-| [05 安全与合规](docs/zh/05-safety.md) | 数据能不能发给云端、权限与沙箱、结果核对 |
-| [06 思考深度与模型选择](docs/zh/06-reasoning-and-models.md) | Extra high、Max、Ultra 各自怎么用 |
-| [07 从想法到执行](docs/zh/07-from-idea-to-agent.md) | 先讨论再执行:从 idea 到交给智能体 |
-| [08 项目的生长与审美](docs/zh/08-growth-and-taste.md) | 好东西是长出来的,简洁即是美 |
+| [00 快速开始](docs/zh/00-getting-started.md) | 安装、更新、用量统计、第一次使用 |
+| [01 项目目录与脚本](docs/zh/01-project-structure.md) | 目录、原始数据保护、`AGENTS.md` |
+| [02 代码与环境](docs/zh/02-reusable-code.md) | 复用、测试、mamba 与 uv |
+| [03 Git 与 GitHub](docs/zh/03-git-github.md) | 提交、分支、CHANGELOG |
+| [04 模型选择与价格](docs/zh/04-models-and-pricing.md) | 价目表、套餐、省钱 |
+| [05 安全与结果核对](docs/zh/05-safety.md) | 数据安全、权限、验证清单 |
+| [06 思考深度与模型选择](docs/zh/06-reasoning-and-models.md) | Extra high、Max、Ultra |
+| [07 从想法到执行](docs/zh/07-from-idea-to-agent.md) | 先讨论,plan 对齐,再动手 |
+| [08 会话与交接](docs/zh/08-sessions-and-handoff.md) | 一个功能一个 session,hand_off |
+| [09 项目的生长与审美](docs/zh/09-growth-and-taste.md) | 长出来的项目,简洁与造轮子 |
 
-## 可以直接拿走的模板
+## 模板
 
-- [`templates/AGENTS.md`](templates/AGENTS.md):项目说明模板,告诉 Codex 你的约定和禁区
-- [`templates/project-layout.md`](templates/project-layout.md):推荐目录结构
-- [`templates/gitignore`](templates/gitignore):适合生信/AIDD 项目的 `.gitignore`
+[`AGENTS.md`](templates/AGENTS.md) · [项目目录](templates/project-layout.md) · [`gitignore`](templates/gitignore) · [`CHANGELOG.md`](templates/CHANGELOG.md) · [`VALIDATION.md`](templates/VALIDATION.md) · [`make_handoff.sh`](templates/make_handoff.sh)
 
-## 一页纸版本
+## 一页纸
 
-1. 原始数据只读,结果可再生。
-2. 每个项目放一份 `AGENTS.md`。
-3. 先和对话型模型把想法聊透,整理成文档,再交给智能体。
-4. 让 Codex 先出计划,你确认后再动手。
-5. 一个任务一个分支,小步提交,自己看 diff。
-6. 重复用到的逻辑写成函数或小工具,并配一个小测试。
-7. 有 Pro $100 以上就把 Extra high 开到底;Ultra 用于开局和并行探索;Max 用于单线程深想。
-8. 主力用 Sol / Terra,Astra 不到万不得已不用;每隔几天更新 Codex。
-9. 敏感数据先问规定,再决定能不能发。
-10. 智能体说的"结果",你来核对。
-11. 保持简洁,建立自己的审美。
+1. 想清楚再动手:先聊透想法,复杂任务先开 plan 对齐。
+2. 原始数据只读,结果可再生,每个项目有 `AGENTS.md` 和 `CHANGELOG.md`。
+3. 环境用 mamba/conda,Python 依赖用 uv。
+4. 一个任务一个分支,小步提交,自己看 diff。
+5. 一个功能模块一个 session,用 `hand_off` 交接。
+6. Pro $100 以上 Extra high 开到底;Ultra 开局,Max 深想;主力 Sol/Terra,少用 Astra。
+7. 敏感数据先问规定,结果自己核对,验证清单让 agent 维护。
 
-## 参与贡献
+## 联系
 
-欢迎提 Issue 或 PR:补充经验、纠正错误、翻译成英文。详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+关于 AIDD、计算机科学,或未来与科技相关的问题,欢迎发邮件到 **zhaisilong@outlook.com**,或直接在 GitHub 提交 Issue。
+也欢迎 PR 补充经验、纠错、翻译,详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ## 许可证
 
-- 文档内容:[CC BY 4.0](LICENSE-docs.md)
-- 代码与模板:[MIT](LICENSE)
+文档 [CC BY 4.0](LICENSE-docs.md) · 代码与模板 [MIT](LICENSE)
