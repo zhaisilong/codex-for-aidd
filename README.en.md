@@ -2,7 +2,7 @@
 
 **How to Use Codex Better for AIDD** · Practical tips for AI-driven drug discovery (AIDD), bioinformatics, and related research.
 
-English | [中文](README.md)
+English | [中文](README.md) · [Changelog](CHANGELOG.md)
 
 > The English version is planned after the Chinese edition stabilizes. Chapter and file names will mirror `docs/zh/`, so translations can be matched one to one.
 
@@ -16,6 +16,9 @@ English | [中文](README.md)
 | 03 Git and GitHub | Small commits, branches, PRs, what stays out of the repo |
 | 04 Models and pricing | Choosing a tier, saving cost, where to check current prices |
 | 05 Safety and compliance | Sensitive data, permissions, verifying results |
+| 06 Reasoning effort and models | When to use Extra high, Max and Ultra |
+| 07 From idea to execution | Discuss first, then hand over to the agent |
+| 08 Growth and taste | Good projects grow; simplicity is beauty |
 
 ## License
 
